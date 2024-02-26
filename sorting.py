@@ -4,19 +4,7 @@ from tkinter import messagebox
 from tkinter.filedialog import askdirectory
 
 
-import os
-
-
 def sort_files(BASE_DIR):
-    """
-    Sorts files in the specified directory into different subdirectories based on their file types.
-
-    Args:
-        BASE_DIR (str): The base directory path where the files are located.
-
-    Returns:
-        None
-    """
     if not os.path.exists(BASE_DIR):
         return print("please enter a valid path")
 
